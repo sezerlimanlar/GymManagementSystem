@@ -33,6 +33,15 @@ namespace GymManagementSystem
 			coachList.DataSource = Con.GetData(Query);
 		}
 
+		private void Reset()
+		{
+			coachNameTxt.Text = "";
+			coachGenderTxt.SelectedItem = -1;
+			coachPhoneTxt.Text = "";
+			coachExperienceTxt.Text = "";
+			coachAddressTxt.Text = "";
+			coachPasswordTxt.Text = "";
+		}
 		private void SaveBtn_Click(object sender, EventArgs e)
 		{
 			try
@@ -54,6 +63,7 @@ namespace GymManagementSystem
 					Con.setData(Query);
 					ShowCoachList();
 					MessageBox.Show("Yeni Antrenör Kayıt Başarılı");
+					Reset();
 				}
 			}
 			catch (Exception Ex)
@@ -142,6 +152,35 @@ namespace GymManagementSystem
 			{
 				MessageBox.Show(Ex.Message);
 			}
+		}
+
+		private void MemberMenu_click(object sender, EventArgs e)
+		{
+			Members members = new Members();
+			members.Show();
+			this.Hide();
+		}
+
+		private void PacketsMenu_Click(object sender, EventArgs e)
+		{
+			MemberPackets memberPackets = new MemberPackets();
+			memberPackets.Show();
+			this.Hide();
+
+		}
+
+		private void ReceptionMenu_Click(object sender, EventArgs e)
+		{
+			Receptions receptions = new Receptions();
+			receptions.Show();
+			this.Hide();
+		}
+
+		private void BillingMenu_Click(object sender, EventArgs e)
+		{
+			Billing billing = new Billing();
+			billing.Show();
+			this.Hide();
 		}
 	}
 }

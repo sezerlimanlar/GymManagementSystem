@@ -30,9 +30,9 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Coachs));
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.CoachDboTxt = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -58,7 +58,7 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.pictureBox8 = new System.Windows.Forms.PictureBox();
-			this.label16 = new System.Windows.Forms.Label();
+			this.ReceptionMenu = new System.Windows.Forms.Label();
 			this.pictureBox5 = new System.Windows.Forms.PictureBox();
 			this.pictureBox4 = new System.Windows.Forms.PictureBox();
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -68,9 +68,9 @@
 			this.panel4 = new System.Windows.Forms.Panel();
 			this.pictureBox6 = new System.Windows.Forms.PictureBox();
 			this.label15 = new System.Windows.Forms.Label();
-			this.label14 = new System.Windows.Forms.Label();
-			this.label12 = new System.Windows.Forms.Label();
-			this.label11 = new System.Windows.Forms.Label();
+			this.BillingMenu = new System.Windows.Forms.Label();
+			this.PacketsMenu = new System.Windows.Forms.Label();
+			this.MemberMenu = new System.Windows.Forms.Label();
 			this.label10 = new System.Windows.Forms.Label();
 			this.coachDobTxt = new Guna.UI2.WinForms.Guna2DateTimePicker();
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -208,27 +208,27 @@
 			// 
 			// coachList
 			// 
-			dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-			this.coachList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+			dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+			this.coachList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
 			this.coachList.BackgroundColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.coachList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+			dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.coachList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
 			this.coachList.ColumnHeadersHeight = 28;
 			this.coachList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.coachList.DefaultCellStyle = dataGridViewCellStyle18;
+			dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.coachList.DefaultCellStyle = dataGridViewCellStyle12;
 			this.coachList.GridColor = System.Drawing.SystemColors.HotTrack;
 			this.coachList.Location = new System.Drawing.Point(219, 334);
 			this.coachList.Name = "coachList";
@@ -389,16 +389,16 @@
 			// 
 			this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
 			this.panel3.Controls.Add(this.pictureBox8);
-			this.panel3.Controls.Add(this.label16);
+			this.panel3.Controls.Add(this.ReceptionMenu);
 			this.panel3.Controls.Add(this.pictureBox5);
 			this.panel3.Controls.Add(this.pictureBox4);
 			this.panel3.Controls.Add(this.pictureBox3);
 			this.panel3.Controls.Add(this.pictureBox2);
 			this.panel3.Controls.Add(this.panel5);
 			this.panel3.Controls.Add(this.panel4);
-			this.panel3.Controls.Add(this.label14);
-			this.panel3.Controls.Add(this.label12);
-			this.panel3.Controls.Add(this.label11);
+			this.panel3.Controls.Add(this.BillingMenu);
+			this.panel3.Controls.Add(this.PacketsMenu);
+			this.panel3.Controls.Add(this.MemberMenu);
 			this.panel3.Controls.Add(this.label10);
 			this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
 			this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -415,17 +415,18 @@
 			this.pictureBox8.TabIndex = 17;
 			this.pictureBox8.TabStop = false;
 			// 
-			// label16
+			// ReceptionMenu
 			// 
-			this.label16.AutoSize = true;
-			this.label16.BackColor = System.Drawing.Color.Transparent;
-			this.label16.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label16.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-			this.label16.Location = new System.Drawing.Point(88, 334);
-			this.label16.Name = "label16";
-			this.label16.Size = new System.Drawing.Size(106, 24);
-			this.label16.TabIndex = 16;
-			this.label16.Text = "Resepsiyon";
+			this.ReceptionMenu.AutoSize = true;
+			this.ReceptionMenu.BackColor = System.Drawing.Color.Transparent;
+			this.ReceptionMenu.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.ReceptionMenu.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+			this.ReceptionMenu.Location = new System.Drawing.Point(88, 334);
+			this.ReceptionMenu.Name = "ReceptionMenu";
+			this.ReceptionMenu.Size = new System.Drawing.Size(106, 24);
+			this.ReceptionMenu.TabIndex = 16;
+			this.ReceptionMenu.Text = "Resepsiyon";
+			this.ReceptionMenu.Click += new System.EventHandler(this.ReceptionMenu_Click);
 			// 
 			// pictureBox5
 			// 
@@ -512,41 +513,44 @@
 			this.label15.TabIndex = 8;
 			this.label15.Text = "Çıkış";
 			// 
-			// label14
+			// BillingMenu
 			// 
-			this.label14.AutoSize = true;
-			this.label14.BackColor = System.Drawing.Color.Transparent;
-			this.label14.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label14.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-			this.label14.Location = new System.Drawing.Point(79, 384);
-			this.label14.Name = "label14";
-			this.label14.Size = new System.Drawing.Size(74, 24);
-			this.label14.TabIndex = 7;
-			this.label14.Text = "Ödeme";
+			this.BillingMenu.AutoSize = true;
+			this.BillingMenu.BackColor = System.Drawing.Color.Transparent;
+			this.BillingMenu.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BillingMenu.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+			this.BillingMenu.Location = new System.Drawing.Point(79, 384);
+			this.BillingMenu.Name = "BillingMenu";
+			this.BillingMenu.Size = new System.Drawing.Size(74, 24);
+			this.BillingMenu.TabIndex = 7;
+			this.BillingMenu.Text = "Ödeme";
+			this.BillingMenu.Click += new System.EventHandler(this.BillingMenu_Click);
 			// 
-			// label12
+			// PacketsMenu
 			// 
-			this.label12.AutoSize = true;
-			this.label12.BackColor = System.Drawing.Color.Transparent;
-			this.label12.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label12.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-			this.label12.Location = new System.Drawing.Point(79, 269);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(85, 24);
-			this.label12.TabIndex = 5;
-			this.label12.Text = "Paketler";
+			this.PacketsMenu.AutoSize = true;
+			this.PacketsMenu.BackColor = System.Drawing.Color.Transparent;
+			this.PacketsMenu.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.PacketsMenu.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+			this.PacketsMenu.Location = new System.Drawing.Point(79, 269);
+			this.PacketsMenu.Name = "PacketsMenu";
+			this.PacketsMenu.Size = new System.Drawing.Size(85, 24);
+			this.PacketsMenu.TabIndex = 5;
+			this.PacketsMenu.Text = "Paketler";
+			this.PacketsMenu.Click += new System.EventHandler(this.PacketsMenu_Click);
 			// 
-			// label11
+			// MemberMenu
 			// 
-			this.label11.AutoSize = true;
-			this.label11.BackColor = System.Drawing.Color.Transparent;
-			this.label11.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label11.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-			this.label11.Location = new System.Drawing.Point(78, 209);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(46, 24);
-			this.label11.TabIndex = 4;
-			this.label11.Text = "Üye";
+			this.MemberMenu.AutoSize = true;
+			this.MemberMenu.BackColor = System.Drawing.Color.Transparent;
+			this.MemberMenu.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.MemberMenu.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+			this.MemberMenu.Location = new System.Drawing.Point(78, 209);
+			this.MemberMenu.Name = "MemberMenu";
+			this.MemberMenu.Size = new System.Drawing.Size(46, 24);
+			this.MemberMenu.TabIndex = 4;
+			this.MemberMenu.Text = "Üye";
+			this.MemberMenu.Click += new System.EventHandler(this.MemberMenu_click);
 			// 
 			// label10
 			// 
@@ -647,9 +651,9 @@
 		private System.Windows.Forms.Label label9;
 		private Guna.UI2.WinForms.Guna2DataGridView coachList;
 		private System.Windows.Forms.Panel panel4;
-		private System.Windows.Forms.Label label14;
-		private System.Windows.Forms.Label label12;
-		private System.Windows.Forms.Label label11;
+		private System.Windows.Forms.Label BillingMenu;
+		private System.Windows.Forms.Label PacketsMenu;
+		private System.Windows.Forms.Label MemberMenu;
 		private System.Windows.Forms.Label label10;
 		private System.Windows.Forms.Button DeleteBtn;
 		private System.Windows.Forms.Button SaveBtn;
@@ -666,7 +670,7 @@
 		private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
 		private System.Windows.Forms.PictureBox pictureBox7;
 		private System.Windows.Forms.PictureBox pictureBox8;
-		private System.Windows.Forms.Label label16;
+		private System.Windows.Forms.Label ReceptionMenu;
 		private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
 		private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
 		private Guna.UI2.WinForms.Guna2DateTimePicker CoachDboTxt;

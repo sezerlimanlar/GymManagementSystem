@@ -30,9 +30,9 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MemberPackets));
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.pictureBox6 = new System.Windows.Forms.PictureBox();
 			this.label15 = new System.Windows.Forms.Label();
@@ -135,6 +135,7 @@
 			this.label14.Size = new System.Drawing.Size(74, 24);
 			this.label14.TabIndex = 7;
 			this.label14.Text = "Ödeme";
+			this.label14.Click += new System.EventHandler(this.label14_Click);
 			// 
 			// label13
 			// 
@@ -171,6 +172,7 @@
 			this.label11.Size = new System.Drawing.Size(46, 24);
 			this.label11.TabIndex = 4;
 			this.label11.Text = "Üye";
+			this.label11.Click += new System.EventHandler(this.label11_Click);
 			// 
 			// pictureBox7
 			// 
@@ -217,6 +219,7 @@
 			this.label10.Size = new System.Drawing.Size(91, 24);
 			this.label10.TabIndex = 3;
 			this.label10.Text = "Antrenör";
+			this.label10.Click += new System.EventHandler(this.label10_Click);
 			// 
 			// DeleteBtn
 			// 
@@ -230,6 +233,7 @@
 			this.DeleteBtn.TabIndex = 21;
 			this.DeleteBtn.Text = "Sil";
 			this.DeleteBtn.UseVisualStyleBackColor = false;
+			this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
 			// 
 			// SaveBtn
 			// 
@@ -243,6 +247,7 @@
 			this.SaveBtn.TabIndex = 20;
 			this.SaveBtn.Text = "Kaydet";
 			this.SaveBtn.UseVisualStyleBackColor = false;
+			this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
 			// 
 			// EditBtn
 			// 
@@ -256,30 +261,31 @@
 			this.EditBtn.TabIndex = 19;
 			this.EditBtn.Text = "Düzenle";
 			this.EditBtn.UseVisualStyleBackColor = false;
+			this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
 			// 
 			// PacketList
 			// 
-			dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-			this.PacketList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.PacketList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-			this.PacketList.ColumnHeadersHeight = 4;
+			dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+			this.PacketList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+			dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.PacketList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+			this.PacketList.ColumnHeadersHeight = 28;
 			this.PacketList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.PacketList.DefaultCellStyle = dataGridViewCellStyle3;
-			this.PacketList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.PacketList.DefaultCellStyle = dataGridViewCellStyle18;
+			this.PacketList.GridColor = System.Drawing.SystemColors.ActiveCaption;
 			this.PacketList.Location = new System.Drawing.Point(219, 334);
 			this.PacketList.Name = "PacketList";
 			this.PacketList.RowHeadersVisible = false;
@@ -291,13 +297,13 @@
 			this.PacketList.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
 			this.PacketList.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
 			this.PacketList.ThemeStyle.BackColor = System.Drawing.Color.White;
-			this.PacketList.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			this.PacketList.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			this.PacketList.ThemeStyle.GridColor = System.Drawing.SystemColors.ActiveCaption;
+			this.PacketList.ThemeStyle.HeaderStyle.BackColor = System.Drawing.SystemColors.MenuHighlight;
 			this.PacketList.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
 			this.PacketList.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.PacketList.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
 			this.PacketList.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			this.PacketList.ThemeStyle.HeaderStyle.Height = 4;
+			this.PacketList.ThemeStyle.HeaderStyle.Height = 28;
 			this.PacketList.ThemeStyle.ReadOnly = false;
 			this.PacketList.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
 			this.PacketList.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -306,6 +312,7 @@
 			this.PacketList.ThemeStyle.RowsStyle.Height = 22;
 			this.PacketList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
 			this.PacketList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			this.PacketList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PacketList_CellContentClick);
 			// 
 			// label5
 			// 
@@ -431,6 +438,7 @@
 			this.label6.Size = new System.Drawing.Size(106, 24);
 			this.label6.TabIndex = 16;
 			this.label6.Text = "Resepsiyon";
+			this.label6.Click += new System.EventHandler(this.label6_Click);
 			// 
 			// pictureBox3
 			// 

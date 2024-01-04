@@ -26,5 +26,33 @@ namespace GymManagementSystem
 		{
 
 		}
+
+		private void CoachMenu_Click(object sender, EventArgs e)
+		{
+			Coachs coachs = new Coachs();
+			coachs.Show();
+			this.Hide();
+		}
+
+		private void PacketsMenu_Click(object sender, EventArgs e)
+		{
+			MemberPackets memberPackets = new MemberPackets();
+			memberPackets.Show();
+			this.Hide();
+		}
+
+		private void ReceptionMenu_Click(object sender, EventArgs e)
+		{
+			Receptions receptions = new Receptions();
+			receptions.Show();
+			this.Hide();
+		}
+
+		private void BillingMenu_Click(object sender, EventArgs e)
+		{
+			Billing billing = new Billing();
+			billing.Show();
+			this.Hide();
+		}
 	}
 }
