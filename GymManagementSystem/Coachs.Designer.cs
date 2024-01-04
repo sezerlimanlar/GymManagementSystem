@@ -30,18 +30,18 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Coachs));
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.panel2 = new System.Windows.Forms.Panel();
+			this.CoachDboTxt = new Guna.UI2.WinForms.Guna2DateTimePicker();
 			this.pictureBox7 = new System.Windows.Forms.PictureBox();
 			this.DeleteBtn = new System.Windows.Forms.Button();
 			this.SaveBtn = new System.Windows.Forms.Button();
 			this.EditBtn = new System.Windows.Forms.Button();
-			this.coachDobTxt = new Guna.UI2.WinForms.Guna2DateTimePicker();
 			this.label9 = new System.Windows.Forms.Label();
-			this.coachLists = new Guna.UI2.WinForms.Guna2DataGridView();
+			this.coachList = new Guna.UI2.WinForms.Guna2DataGridView();
 			this.coachPasswordTxt = new System.Windows.Forms.TextBox();
 			this.label8 = new System.Windows.Forms.Label();
 			this.coachAddressTxt = new System.Windows.Forms.TextBox();
@@ -72,11 +72,14 @@
 			this.label12 = new System.Windows.Forms.Label();
 			this.label11 = new System.Windows.Forms.Label();
 			this.label10 = new System.Windows.Forms.Label();
+			this.coachDobTxt = new Guna.UI2.WinForms.Guna2DateTimePicker();
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+			this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+			this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.coachLists)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.coachList)).BeginInit();
 			this.panel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -92,22 +95,21 @@
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.SystemColors.HotTrack;
-			this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-			this.panel1.Location = new System.Drawing.Point(0, 0);
+			this.panel1.Location = new System.Drawing.Point(12, 0);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(154, 597);
+			this.panel1.Size = new System.Drawing.Size(165, 621);
 			this.panel1.TabIndex = 0;
 			// 
 			// panel2
 			// 
 			this.panel2.BackColor = System.Drawing.SystemColors.Control;
+			this.panel2.Controls.Add(this.CoachDboTxt);
 			this.panel2.Controls.Add(this.pictureBox7);
 			this.panel2.Controls.Add(this.DeleteBtn);
 			this.panel2.Controls.Add(this.SaveBtn);
 			this.panel2.Controls.Add(this.EditBtn);
-			this.panel2.Controls.Add(this.coachDobTxt);
 			this.panel2.Controls.Add(this.label9);
-			this.panel2.Controls.Add(this.coachLists);
+			this.panel2.Controls.Add(this.coachList);
 			this.panel2.Controls.Add(this.coachPasswordTxt);
 			this.panel2.Controls.Add(this.label8);
 			this.panel2.Controls.Add(this.coachAddressTxt);
@@ -123,10 +125,24 @@
 			this.panel2.Controls.Add(this.label2);
 			this.panel2.Controls.Add(this.label1);
 			this.panel2.Controls.Add(this.panel3);
-			this.panel2.Location = new System.Drawing.Point(24, 12);
+			this.panel2.Location = new System.Drawing.Point(34, 14);
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(1005, 573);
 			this.panel2.TabIndex = 1;
+			// 
+			// CoachDboTxt
+			// 
+			this.CoachDboTxt.Checked = true;
+			this.CoachDboTxt.FillColor = System.Drawing.SystemColors.HotTrack;
+			this.CoachDboTxt.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.CoachDboTxt.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+			this.CoachDboTxt.Location = new System.Drawing.Point(584, 136);
+			this.CoachDboTxt.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+			this.CoachDboTxt.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+			this.CoachDboTxt.Name = "CoachDboTxt";
+			this.CoachDboTxt.Size = new System.Drawing.Size(167, 25);
+			this.CoachDboTxt.TabIndex = 23;
+			this.CoachDboTxt.Value = new System.DateTime(2024, 1, 4, 20, 29, 26, 93);
 			// 
 			// pictureBox7
 			// 
@@ -149,6 +165,7 @@
 			this.DeleteBtn.TabIndex = 21;
 			this.DeleteBtn.Text = "Sil";
 			this.DeleteBtn.UseVisualStyleBackColor = false;
+			this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
 			// 
 			// SaveBtn
 			// 
@@ -162,6 +179,7 @@
 			this.SaveBtn.TabIndex = 20;
 			this.SaveBtn.Text = "Kaydet";
 			this.SaveBtn.UseVisualStyleBackColor = false;
+			this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
 			// 
 			// EditBtn
 			// 
@@ -175,22 +193,7 @@
 			this.EditBtn.TabIndex = 19;
 			this.EditBtn.Text = "Düzenle";
 			this.EditBtn.UseVisualStyleBackColor = false;
-			// 
-			// coachDobTxt
-			// 
-			this.coachDobTxt.BackColor = System.Drawing.SystemColors.Highlight;
-			this.coachDobTxt.Checked = true;
-			this.coachDobTxt.FillColor = System.Drawing.SystemColors.MenuHighlight;
-			this.coachDobTxt.Font = new System.Drawing.Font("Poor Richard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.coachDobTxt.ForeColor = System.Drawing.SystemColors.InfoText;
-			this.coachDobTxt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-			this.coachDobTxt.Location = new System.Drawing.Point(594, 141);
-			this.coachDobTxt.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-			this.coachDobTxt.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-			this.coachDobTxt.Name = "coachDobTxt";
-			this.coachDobTxt.Size = new System.Drawing.Size(157, 20);
-			this.coachDobTxt.TabIndex = 18;
-			this.coachDobTxt.Value = new System.DateTime(2024, 1, 2, 20, 55, 18, 553);
+			this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
 			// 
 			// label9
 			// 
@@ -203,55 +206,57 @@
 			this.label9.TabIndex = 17;
 			this.label9.Text = "Antrenör Listesi";
 			// 
-			// coachLists
+			// coachList
 			// 
-			dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-			this.coachLists.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.coachLists.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-			this.coachLists.ColumnHeadersHeight = 4;
-			this.coachLists.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.coachLists.DefaultCellStyle = dataGridViewCellStyle3;
-			this.coachLists.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			this.coachLists.Location = new System.Drawing.Point(219, 334);
-			this.coachLists.Name = "coachLists";
-			this.coachLists.RowHeadersVisible = false;
-			this.coachLists.Size = new System.Drawing.Size(768, 221);
-			this.coachLists.TabIndex = 16;
-			this.coachLists.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-			this.coachLists.ThemeStyle.AlternatingRowsStyle.Font = null;
-			this.coachLists.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-			this.coachLists.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-			this.coachLists.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-			this.coachLists.ThemeStyle.BackColor = System.Drawing.Color.White;
-			this.coachLists.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			this.coachLists.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			this.coachLists.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-			this.coachLists.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.coachLists.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-			this.coachLists.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			this.coachLists.ThemeStyle.HeaderStyle.Height = 4;
-			this.coachLists.ThemeStyle.ReadOnly = false;
-			this.coachLists.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-			this.coachLists.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-			this.coachLists.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.coachLists.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			this.coachLists.ThemeStyle.RowsStyle.Height = 22;
-			this.coachLists.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			this.coachLists.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+			this.coachList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+			this.coachList.BackgroundColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.coachList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+			this.coachList.ColumnHeadersHeight = 28;
+			this.coachList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+			dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.coachList.DefaultCellStyle = dataGridViewCellStyle18;
+			this.coachList.GridColor = System.Drawing.SystemColors.HotTrack;
+			this.coachList.Location = new System.Drawing.Point(219, 334);
+			this.coachList.Name = "coachList";
+			this.coachList.RowHeadersVisible = false;
+			this.coachList.Size = new System.Drawing.Size(768, 221);
+			this.coachList.TabIndex = 16;
+			this.coachList.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+			this.coachList.ThemeStyle.AlternatingRowsStyle.Font = null;
+			this.coachList.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+			this.coachList.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+			this.coachList.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+			this.coachList.ThemeStyle.BackColor = System.Drawing.SystemColors.HighlightText;
+			this.coachList.ThemeStyle.GridColor = System.Drawing.SystemColors.HotTrack;
+			this.coachList.ThemeStyle.HeaderStyle.BackColor = System.Drawing.SystemColors.HotTrack;
+			this.coachList.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+			this.coachList.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Poor Richard", 12F);
+			this.coachList.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+			this.coachList.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+			this.coachList.ThemeStyle.HeaderStyle.Height = 28;
+			this.coachList.ThemeStyle.ReadOnly = false;
+			this.coachList.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+			this.coachList.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+			this.coachList.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.coachList.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			this.coachList.ThemeStyle.RowsStyle.Height = 22;
+			this.coachList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			this.coachList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			this.coachList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.coachList_CellContentClick);
 			// 
 			// coachPasswordTxt
 			// 
@@ -296,7 +301,6 @@
 			this.label6.Size = new System.Drawing.Size(81, 24);
 			this.label6.TabIndex = 11;
 			this.label6.Text = "Tecrübe";
-			this.label6.Click += new System.EventHandler(this.label6_Click);
 			// 
 			// label5
 			// 
@@ -556,6 +560,22 @@
 			this.label10.TabIndex = 3;
 			this.label10.Text = "Antrenör";
 			// 
+			// coachDobTxt
+			// 
+			this.coachDobTxt.BackColor = System.Drawing.SystemColors.Highlight;
+			this.coachDobTxt.Checked = true;
+			this.coachDobTxt.FillColor = System.Drawing.SystemColors.MenuHighlight;
+			this.coachDobTxt.Font = new System.Drawing.Font("Poor Richard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.coachDobTxt.ForeColor = System.Drawing.SystemColors.InfoText;
+			this.coachDobTxt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+			this.coachDobTxt.Location = new System.Drawing.Point(594, 141);
+			this.coachDobTxt.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+			this.coachDobTxt.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+			this.coachDobTxt.Name = "coachDobTxt";
+			this.coachDobTxt.Size = new System.Drawing.Size(157, 20);
+			this.coachDobTxt.TabIndex = 18;
+			this.coachDobTxt.Value = new System.DateTime(2024, 1, 2, 20, 55, 18, 553);
+			// 
 			// guna2Elipse1
 			// 
 			this.guna2Elipse1.BorderRadius = 10;
@@ -566,22 +586,28 @@
 			this.guna2Elipse2.BorderRadius = 20;
 			this.guna2Elipse2.TargetControl = this.panel2;
 			// 
+			// guna2Elipse3
+			// 
+			this.guna2Elipse3.BorderRadius = 20;
+			this.guna2Elipse3.TargetControl = this;
+			// 
 			// Coachs
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-			this.ClientSize = new System.Drawing.Size(1041, 597);
+			this.BackColor = System.Drawing.SystemColors.ControlText;
+			this.ClientSize = new System.Drawing.Size(1060, 620);
 			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.panel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "Coachs";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Form1";
 			this.Load += new System.EventHandler(this.Form1_Load);
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.coachLists)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.coachList)).EndInit();
 			this.panel3.ResumeLayout(false);
 			this.panel3.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -619,7 +645,7 @@
 		private System.Windows.Forms.Label label7;
 		private Guna.UI2.WinForms.Guna2DateTimePicker coachDobTxt;
 		private System.Windows.Forms.Label label9;
-		private Guna.UI2.WinForms.Guna2DataGridView coachLists;
+		private Guna.UI2.WinForms.Guna2DataGridView coachList;
 		private System.Windows.Forms.Panel panel4;
 		private System.Windows.Forms.Label label14;
 		private System.Windows.Forms.Label label12;
@@ -641,6 +667,9 @@
 		private System.Windows.Forms.PictureBox pictureBox7;
 		private System.Windows.Forms.PictureBox pictureBox8;
 		private System.Windows.Forms.Label label16;
+		private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+		private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
+		private Guna.UI2.WinForms.Guna2DateTimePicker CoachDboTxt;
 	}
 }
 

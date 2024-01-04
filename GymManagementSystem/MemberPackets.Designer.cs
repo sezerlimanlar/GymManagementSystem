@@ -46,14 +46,13 @@
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.label10 = new System.Windows.Forms.Label();
-			this.button3 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
-			this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+			this.DeleteBtn = new System.Windows.Forms.Button();
+			this.SaveBtn = new System.Windows.Forms.Button();
+			this.EditBtn = new System.Windows.Forms.Button();
+			this.PacketList = new Guna.UI2.WinForms.Guna2DataGridView();
 			this.label5 = new System.Windows.Forms.Label();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.PacketPriceTxt = new System.Windows.Forms.TextBox();
+			this.PacketNameTxt = new System.Windows.Forms.TextBox();
 			this.pictureBox5 = new System.Windows.Forms.PictureBox();
 			this.pictureBox4 = new System.Windows.Forms.PictureBox();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -61,27 +60,28 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
 			this.panel3 = new System.Windows.Forms.Panel();
+			this.pictureBox8 = new System.Windows.Forms.PictureBox();
+			this.label6 = new System.Windows.Forms.Label();
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
 			this.panel5 = new System.Windows.Forms.Panel();
 			this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.label4 = new System.Windows.Forms.Label();
-			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.pictureBox8 = new System.Windows.Forms.PictureBox();
-			this.label6 = new System.Windows.Forms.Label();
+			this.PacketGoalTxt = new System.Windows.Forms.TextBox();
+			this.PacketDurationTxt = new System.Windows.Forms.TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
 			this.panel4.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.PacketList)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.panel3.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			this.panel5.SuspendLayout();
 			this.panel2.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// pictureBox1
@@ -218,49 +218,49 @@
 			this.label10.TabIndex = 3;
 			this.label10.Text = "Antrenör";
 			// 
-			// button3
+			// DeleteBtn
 			// 
-			this.button3.BackColor = System.Drawing.SystemColors.Highlight;
-			this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.button3.Font = new System.Drawing.Font("Poor Richard", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.button3.Location = new System.Drawing.Point(547, 209);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(81, 28);
-			this.button3.TabIndex = 21;
-			this.button3.Text = "Sil";
-			this.button3.UseVisualStyleBackColor = false;
+			this.DeleteBtn.BackColor = System.Drawing.SystemColors.Highlight;
+			this.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.DeleteBtn.Font = new System.Drawing.Font("Poor Richard", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.DeleteBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.DeleteBtn.Location = new System.Drawing.Point(547, 209);
+			this.DeleteBtn.Name = "DeleteBtn";
+			this.DeleteBtn.Size = new System.Drawing.Size(81, 28);
+			this.DeleteBtn.TabIndex = 21;
+			this.DeleteBtn.Text = "Sil";
+			this.DeleteBtn.UseVisualStyleBackColor = false;
 			// 
-			// button2
+			// SaveBtn
 			// 
-			this.button2.BackColor = System.Drawing.SystemColors.Highlight;
-			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.button2.Font = new System.Drawing.Font("Poor Richard", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.button2.Location = new System.Drawing.Point(416, 209);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(78, 28);
-			this.button2.TabIndex = 20;
-			this.button2.Text = "Kaydet";
-			this.button2.UseVisualStyleBackColor = false;
+			this.SaveBtn.BackColor = System.Drawing.SystemColors.Highlight;
+			this.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.SaveBtn.Font = new System.Drawing.Font("Poor Richard", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.SaveBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.SaveBtn.Location = new System.Drawing.Point(416, 209);
+			this.SaveBtn.Name = "SaveBtn";
+			this.SaveBtn.Size = new System.Drawing.Size(78, 28);
+			this.SaveBtn.TabIndex = 20;
+			this.SaveBtn.Text = "Kaydet";
+			this.SaveBtn.UseVisualStyleBackColor = false;
 			// 
-			// button1
+			// EditBtn
 			// 
-			this.button1.BackColor = System.Drawing.SystemColors.Highlight;
-			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.button1.Font = new System.Drawing.Font("Poor Richard", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.button1.Location = new System.Drawing.Point(679, 209);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(84, 28);
-			this.button1.TabIndex = 19;
-			this.button1.Text = "Düzenle";
-			this.button1.UseVisualStyleBackColor = false;
+			this.EditBtn.BackColor = System.Drawing.SystemColors.Highlight;
+			this.EditBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.EditBtn.Font = new System.Drawing.Font("Poor Richard", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.EditBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.EditBtn.Location = new System.Drawing.Point(679, 209);
+			this.EditBtn.Name = "EditBtn";
+			this.EditBtn.Size = new System.Drawing.Size(84, 28);
+			this.EditBtn.TabIndex = 19;
+			this.EditBtn.Text = "Düzenle";
+			this.EditBtn.UseVisualStyleBackColor = false;
 			// 
-			// guna2DataGridView1
+			// PacketList
 			// 
 			dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-			this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+			this.PacketList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
 			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
 			dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
 			dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -268,9 +268,9 @@
 			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-			this.guna2DataGridView1.ColumnHeadersHeight = 4;
-			this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+			this.PacketList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+			this.PacketList.ColumnHeadersHeight = 4;
+			this.PacketList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
 			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
 			dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
 			dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -278,34 +278,34 @@
 			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
 			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
 			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-			this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			this.guna2DataGridView1.Location = new System.Drawing.Point(219, 334);
-			this.guna2DataGridView1.Name = "guna2DataGridView1";
-			this.guna2DataGridView1.RowHeadersVisible = false;
-			this.guna2DataGridView1.Size = new System.Drawing.Size(768, 221);
-			this.guna2DataGridView1.TabIndex = 16;
-			this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-			this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-			this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-			this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-			this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-			this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-			this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-			this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-			this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-			this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-			this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-			this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-			this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-			this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			this.PacketList.DefaultCellStyle = dataGridViewCellStyle3;
+			this.PacketList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			this.PacketList.Location = new System.Drawing.Point(219, 334);
+			this.PacketList.Name = "PacketList";
+			this.PacketList.RowHeadersVisible = false;
+			this.PacketList.Size = new System.Drawing.Size(768, 221);
+			this.PacketList.TabIndex = 16;
+			this.PacketList.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+			this.PacketList.ThemeStyle.AlternatingRowsStyle.Font = null;
+			this.PacketList.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+			this.PacketList.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+			this.PacketList.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+			this.PacketList.ThemeStyle.BackColor = System.Drawing.Color.White;
+			this.PacketList.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			this.PacketList.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			this.PacketList.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+			this.PacketList.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.PacketList.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+			this.PacketList.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+			this.PacketList.ThemeStyle.HeaderStyle.Height = 4;
+			this.PacketList.ThemeStyle.ReadOnly = false;
+			this.PacketList.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+			this.PacketList.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+			this.PacketList.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.PacketList.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			this.PacketList.ThemeStyle.RowsStyle.Height = 22;
+			this.PacketList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			this.PacketList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
 			// 
 			// label5
 			// 
@@ -317,30 +317,19 @@
 			this.label5.TabIndex = 9;
 			this.label5.Text = "Ücret";
 			// 
-			// comboBox1
+			// PacketPriceTxt
 			// 
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Items.AddRange(new object[] {
-            "Erkek",
-            "Kadın"});
-			this.comboBox1.Location = new System.Drawing.Point(400, 140);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(157, 21);
-			this.comboBox1.TabIndex = 8;
+			this.PacketPriceTxt.Location = new System.Drawing.Point(782, 141);
+			this.PacketPriceTxt.Name = "PacketPriceTxt";
+			this.PacketPriceTxt.Size = new System.Drawing.Size(157, 20);
+			this.PacketPriceTxt.TabIndex = 6;
 			// 
-			// textBox2
+			// PacketNameTxt
 			// 
-			this.textBox2.Location = new System.Drawing.Point(782, 141);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(157, 20);
-			this.textBox2.TabIndex = 6;
-			// 
-			// textBox1
-			// 
-			this.textBox1.Location = new System.Drawing.Point(218, 141);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(157, 20);
-			this.textBox1.TabIndex = 5;
+			this.PacketNameTxt.Location = new System.Drawing.Point(218, 141);
+			this.PacketNameTxt.Name = "PacketNameTxt";
+			this.PacketNameTxt.Size = new System.Drawing.Size(157, 20);
+			this.PacketNameTxt.TabIndex = 5;
 			// 
 			// pictureBox5
 			// 
@@ -422,6 +411,27 @@
 			this.panel3.Size = new System.Drawing.Size(200, 573);
 			this.panel3.TabIndex = 0;
 			// 
+			// pictureBox8
+			// 
+			this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+			this.pictureBox8.Location = new System.Drawing.Point(21, 314);
+			this.pictureBox8.Name = "pictureBox8";
+			this.pictureBox8.Size = new System.Drawing.Size(52, 50);
+			this.pictureBox8.TabIndex = 17;
+			this.pictureBox8.TabStop = false;
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.BackColor = System.Drawing.Color.Transparent;
+			this.label6.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+			this.label6.Location = new System.Drawing.Point(88, 334);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(106, 24);
+			this.label6.TabIndex = 16;
+			this.label6.Text = "Resepsiyon";
+			// 
 			// pictureBox3
 			// 
 			this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
@@ -448,18 +458,18 @@
 			// panel2
 			// 
 			this.panel2.BackColor = System.Drawing.SystemColors.Control;
+			this.panel2.Controls.Add(this.PacketDurationTxt);
 			this.panel2.Controls.Add(this.label4);
-			this.panel2.Controls.Add(this.textBox3);
+			this.panel2.Controls.Add(this.PacketGoalTxt);
 			this.panel2.Controls.Add(this.pictureBox7);
-			this.panel2.Controls.Add(this.button3);
-			this.panel2.Controls.Add(this.button2);
-			this.panel2.Controls.Add(this.button1);
+			this.panel2.Controls.Add(this.DeleteBtn);
+			this.panel2.Controls.Add(this.SaveBtn);
+			this.panel2.Controls.Add(this.EditBtn);
 			this.panel2.Controls.Add(this.label9);
-			this.panel2.Controls.Add(this.guna2DataGridView1);
+			this.panel2.Controls.Add(this.PacketList);
 			this.panel2.Controls.Add(this.label5);
-			this.panel2.Controls.Add(this.comboBox1);
-			this.panel2.Controls.Add(this.textBox2);
-			this.panel2.Controls.Add(this.textBox1);
+			this.panel2.Controls.Add(this.PacketPriceTxt);
+			this.panel2.Controls.Add(this.PacketNameTxt);
 			this.panel2.Controls.Add(this.label3);
 			this.panel2.Controls.Add(this.label2);
 			this.panel2.Controls.Add(this.label1);
@@ -479,33 +489,19 @@
 			this.label4.TabIndex = 24;
 			this.label4.Text = "Hedeflenen";
 			// 
-			// textBox3
+			// PacketGoalTxt
 			// 
-			this.textBox3.Location = new System.Drawing.Point(588, 141);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(157, 20);
-			this.textBox3.TabIndex = 23;
+			this.PacketGoalTxt.Location = new System.Drawing.Point(588, 141);
+			this.PacketGoalTxt.Name = "PacketGoalTxt";
+			this.PacketGoalTxt.Size = new System.Drawing.Size(157, 20);
+			this.PacketGoalTxt.TabIndex = 23;
 			// 
-			// pictureBox8
+			// PacketDurationTxt
 			// 
-			this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-			this.pictureBox8.Location = new System.Drawing.Point(21, 314);
-			this.pictureBox8.Name = "pictureBox8";
-			this.pictureBox8.Size = new System.Drawing.Size(52, 50);
-			this.pictureBox8.TabIndex = 17;
-			this.pictureBox8.TabStop = false;
-			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.BackColor = System.Drawing.Color.Transparent;
-			this.label6.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label6.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-			this.label6.Location = new System.Drawing.Point(88, 334);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(106, 24);
-			this.label6.TabIndex = 16;
-			this.label6.Text = "Resepsiyon";
+			this.PacketDurationTxt.Location = new System.Drawing.Point(400, 141);
+			this.PacketDurationTxt.Name = "PacketDurationTxt";
+			this.PacketDurationTxt.Size = new System.Drawing.Size(157, 20);
+			this.PacketDurationTxt.TabIndex = 25;
 			// 
 			// MemberPackets
 			// 
@@ -522,17 +518,17 @@
 			this.panel4.ResumeLayout(false);
 			this.panel4.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.PacketList)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.panel3.ResumeLayout(false);
 			this.panel3.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
 			this.panel5.ResumeLayout(false);
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -552,14 +548,13 @@
 		private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Label label10;
-		private System.Windows.Forms.Button button3;
-		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Button button1;
-		private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+		private System.Windows.Forms.Button DeleteBtn;
+		private System.Windows.Forms.Button SaveBtn;
+		private System.Windows.Forms.Button EditBtn;
+		private Guna.UI2.WinForms.Guna2DataGridView PacketList;
 		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.ComboBox comboBox1;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox PacketPriceTxt;
+		private System.Windows.Forms.TextBox PacketNameTxt;
 		private System.Windows.Forms.PictureBox pictureBox5;
 		private System.Windows.Forms.PictureBox pictureBox4;
 		private System.Windows.Forms.PictureBox pictureBox2;
@@ -572,8 +567,9 @@
 		private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.TextBox textBox3;
+		private System.Windows.Forms.TextBox PacketGoalTxt;
 		private System.Windows.Forms.PictureBox pictureBox8;
 		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.TextBox PacketDurationTxt;
 	}
 }
