@@ -91,10 +91,6 @@ namespace GymManagementSystem
 				}
 				else
 				{
-					string packetName = PacketNameTxt.Text;
-					string packetDuration = PacketDurationTxt.Text;
-					string packetGoal = PacketGoalTxt.Text;
-					string packetPrice = PacketPriceTxt.Text;
 					string Query = "delete from PacketTable where PacketId = '{0}'";
 					Query = string.Format(Query, key);
 					Con.setData(Query);
@@ -161,6 +157,13 @@ namespace GymManagementSystem
 		{
 			Billing billing = new Billing();
 			billing.Show();
+			this.Hide();
+		}
+
+		private void label15_Click(object sender, EventArgs e)
+		{
+			Login login = new Login();
+			login.Show();
 			this.Hide();
 		}
 	}

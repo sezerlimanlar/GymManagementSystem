@@ -30,17 +30,26 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Receptions));
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.panel2 = new System.Windows.Forms.Panel();
+			this.ReceptionPasswordTxt = new System.Windows.Forms.TextBox();
+			this.label6 = new System.Windows.Forms.Label();
 			this.pictureBox7 = new System.Windows.Forms.PictureBox();
+			this.ReceptionAddressTxt = new System.Windows.Forms.TextBox();
+			this.label5 = new System.Windows.Forms.Label();
+			this.ReceptionPhoneTxt = new System.Windows.Forms.TextBox();
+			this.label8 = new System.Windows.Forms.Label();
 			this.DeleteBtn = new System.Windows.Forms.Button();
 			this.SaveBtn = new System.Windows.Forms.Button();
 			this.UpdateBtn = new System.Windows.Forms.Button();
+			this.ReceptionDobTxt = new Guna.UI2.WinForms.Guna2DateTimePicker();
 			this.label9 = new System.Windows.Forms.Label();
 			this.ReceptionList = new Guna.UI2.WinForms.Guna2DataGridView();
+			this.ReceptionGenderTxt = new System.Windows.Forms.ComboBox();
 			this.ReceptionNameTxt = new System.Windows.Forms.TextBox();
+			this.label4 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
@@ -63,15 +72,6 @@
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-			this.ReceptionGenderTxt = new System.Windows.Forms.ComboBox();
-			this.label4 = new System.Windows.Forms.Label();
-			this.ReceptionDobTxt = new Guna.UI2.WinForms.Guna2DateTimePicker();
-			this.label8 = new System.Windows.Forms.Label();
-			this.ReceptionPhoneTxt = new System.Windows.Forms.TextBox();
-			this.label5 = new System.Windows.Forms.Label();
-			this.ReceptionAddressTxt = new System.Windows.Forms.TextBox();
-			this.label6 = new System.Windows.Forms.Label();
-			this.ReceptionPasswordTxt = new System.Windows.Forms.TextBox();
 			this.panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.ReceptionList)).BeginInit();
@@ -115,6 +115,23 @@
 			this.panel2.TabIndex = 5;
 			this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
 			// 
+			// ReceptionPasswordTxt
+			// 
+			this.ReceptionPasswordTxt.Location = new System.Drawing.Point(766, 209);
+			this.ReceptionPasswordTxt.Name = "ReceptionPasswordTxt";
+			this.ReceptionPasswordTxt.Size = new System.Drawing.Size(157, 20);
+			this.ReceptionPasswordTxt.TabIndex = 36;
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.Location = new System.Drawing.Point(762, 172);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(52, 24);
+			this.label6.TabIndex = 35;
+			this.label6.Text = "Sifre";
+			// 
 			// pictureBox7
 			// 
 			this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
@@ -123,6 +140,40 @@
 			this.pictureBox7.Size = new System.Drawing.Size(52, 50);
 			this.pictureBox7.TabIndex = 34;
 			this.pictureBox7.TabStop = false;
+			// 
+			// ReceptionAddressTxt
+			// 
+			this.ReceptionAddressTxt.Location = new System.Drawing.Point(521, 209);
+			this.ReceptionAddressTxt.Name = "ReceptionAddressTxt";
+			this.ReceptionAddressTxt.Size = new System.Drawing.Size(157, 20);
+			this.ReceptionAddressTxt.TabIndex = 33;
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.Location = new System.Drawing.Point(517, 172);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(62, 24);
+			this.label5.TabIndex = 32;
+			this.label5.Text = "Adres";
+			// 
+			// ReceptionPhoneTxt
+			// 
+			this.ReceptionPhoneTxt.Location = new System.Drawing.Point(270, 209);
+			this.ReceptionPhoneTxt.Name = "ReceptionPhoneTxt";
+			this.ReceptionPhoneTxt.Size = new System.Drawing.Size(157, 20);
+			this.ReceptionPhoneTxt.TabIndex = 30;
+			// 
+			// label8
+			// 
+			this.label8.AutoSize = true;
+			this.label8.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label8.Location = new System.Drawing.Point(267, 174);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(76, 24);
+			this.label8.TabIndex = 29;
+			this.label8.Text = "Telefon";
 			// 
 			// DeleteBtn
 			// 
@@ -166,6 +217,22 @@
 			this.UpdateBtn.UseVisualStyleBackColor = false;
 			this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
 			// 
+			// ReceptionDobTxt
+			// 
+			this.ReceptionDobTxt.BackColor = System.Drawing.SystemColors.Highlight;
+			this.ReceptionDobTxt.Checked = true;
+			this.ReceptionDobTxt.FillColor = System.Drawing.SystemColors.MenuHighlight;
+			this.ReceptionDobTxt.Font = new System.Drawing.Font("Poor Richard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.ReceptionDobTxt.ForeColor = System.Drawing.SystemColors.InfoText;
+			this.ReceptionDobTxt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+			this.ReceptionDobTxt.Location = new System.Drawing.Point(766, 141);
+			this.ReceptionDobTxt.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+			this.ReceptionDobTxt.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+			this.ReceptionDobTxt.Name = "ReceptionDobTxt";
+			this.ReceptionDobTxt.Size = new System.Drawing.Size(157, 20);
+			this.ReceptionDobTxt.TabIndex = 18;
+			this.ReceptionDobTxt.Value = new System.DateTime(2024, 1, 2, 20, 55, 18, 553);
+			// 
 			// label9
 			// 
 			this.label9.AutoSize = true;
@@ -179,26 +246,26 @@
 			// 
 			// ReceptionList
 			// 
-			dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-			this.ReceptionList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
-			dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.ReceptionList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
+			dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+			this.ReceptionList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.ReceptionList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
 			this.ReceptionList.ColumnHeadersHeight = 28;
 			this.ReceptionList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			dataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.ReceptionList.DefaultCellStyle = dataGridViewCellStyle21;
+			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.ReceptionList.DefaultCellStyle = dataGridViewCellStyle3;
 			this.ReceptionList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
 			this.ReceptionList.Location = new System.Drawing.Point(219, 334);
 			this.ReceptionList.Name = "ReceptionList";
@@ -228,12 +295,33 @@
 			this.ReceptionList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
 			this.ReceptionList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ReceptionList_CellContentClick);
 			// 
+			// ReceptionGenderTxt
+			// 
+			this.ReceptionGenderTxt.FormattingEnabled = true;
+			this.ReceptionGenderTxt.Items.AddRange(new object[] {
+            "Erkek",
+            "Kadın"});
+			this.ReceptionGenderTxt.Location = new System.Drawing.Point(521, 141);
+			this.ReceptionGenderTxt.Name = "ReceptionGenderTxt";
+			this.ReceptionGenderTxt.Size = new System.Drawing.Size(157, 21);
+			this.ReceptionGenderTxt.TabIndex = 8;
+			// 
 			// ReceptionNameTxt
 			// 
 			this.ReceptionNameTxt.Location = new System.Drawing.Point(269, 141);
 			this.ReceptionNameTxt.Name = "ReceptionNameTxt";
 			this.ReceptionNameTxt.Size = new System.Drawing.Size(157, 20);
 			this.ReceptionNameTxt.TabIndex = 5;
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.Location = new System.Drawing.Point(762, 106);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(130, 24);
+			this.label4.TabIndex = 4;
+			this.label4.Text = "Dogum Tarihi";
 			// 
 			// label3
 			// 
@@ -380,6 +468,7 @@
 			this.label15.Size = new System.Drawing.Size(57, 24);
 			this.label15.TabIndex = 8;
 			this.label15.Text = "Çıkış";
+			this.label15.Click += new System.EventHandler(this.label15_Click);
 			// 
 			// label14
 			// 
@@ -464,94 +553,6 @@
 			this.guna2Elipse1.BorderRadius = 10;
 			this.guna2Elipse1.TargetControl = this.panel1;
 			// 
-			// ReceptionGenderTxt
-			// 
-			this.ReceptionGenderTxt.FormattingEnabled = true;
-			this.ReceptionGenderTxt.Items.AddRange(new object[] {
-            "Erkek",
-            "Kadın"});
-			this.ReceptionGenderTxt.Location = new System.Drawing.Point(521, 141);
-			this.ReceptionGenderTxt.Name = "ReceptionGenderTxt";
-			this.ReceptionGenderTxt.Size = new System.Drawing.Size(157, 21);
-			this.ReceptionGenderTxt.TabIndex = 8;
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(762, 106);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(130, 24);
-			this.label4.TabIndex = 4;
-			this.label4.Text = "Dogum Tarihi";
-			// 
-			// ReceptionDobTxt
-			// 
-			this.ReceptionDobTxt.BackColor = System.Drawing.SystemColors.Highlight;
-			this.ReceptionDobTxt.Checked = true;
-			this.ReceptionDobTxt.FillColor = System.Drawing.SystemColors.MenuHighlight;
-			this.ReceptionDobTxt.Font = new System.Drawing.Font("Poor Richard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.ReceptionDobTxt.ForeColor = System.Drawing.SystemColors.InfoText;
-			this.ReceptionDobTxt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-			this.ReceptionDobTxt.Location = new System.Drawing.Point(766, 141);
-			this.ReceptionDobTxt.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-			this.ReceptionDobTxt.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-			this.ReceptionDobTxt.Name = "ReceptionDobTxt";
-			this.ReceptionDobTxt.Size = new System.Drawing.Size(157, 20);
-			this.ReceptionDobTxt.TabIndex = 18;
-			this.ReceptionDobTxt.Value = new System.DateTime(2024, 1, 2, 20, 55, 18, 553);
-			// 
-			// label8
-			// 
-			this.label8.AutoSize = true;
-			this.label8.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label8.Location = new System.Drawing.Point(267, 174);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(76, 24);
-			this.label8.TabIndex = 29;
-			this.label8.Text = "Telefon";
-			// 
-			// ReceptionPhoneTxt
-			// 
-			this.ReceptionPhoneTxt.Location = new System.Drawing.Point(270, 209);
-			this.ReceptionPhoneTxt.Name = "ReceptionPhoneTxt";
-			this.ReceptionPhoneTxt.Size = new System.Drawing.Size(157, 20);
-			this.ReceptionPhoneTxt.TabIndex = 30;
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(517, 172);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(62, 24);
-			this.label5.TabIndex = 32;
-			this.label5.Text = "Adres";
-			// 
-			// ReceptionAddressTxt
-			// 
-			this.ReceptionAddressTxt.Location = new System.Drawing.Point(521, 209);
-			this.ReceptionAddressTxt.Name = "ReceptionAddressTxt";
-			this.ReceptionAddressTxt.Size = new System.Drawing.Size(157, 20);
-			this.ReceptionAddressTxt.TabIndex = 33;
-			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label6.Location = new System.Drawing.Point(762, 172);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(52, 24);
-			this.label6.TabIndex = 35;
-			this.label6.Text = "Sifre";
-			// 
-			// ReceptionPasswordTxt
-			// 
-			this.ReceptionPasswordTxt.Location = new System.Drawing.Point(766, 209);
-			this.ReceptionPasswordTxt.Name = "ReceptionPasswordTxt";
-			this.ReceptionPasswordTxt.Size = new System.Drawing.Size(157, 20);
-			this.ReceptionPasswordTxt.TabIndex = 36;
-			// 
 			// Receptions
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -561,6 +562,7 @@
 			this.Controls.Add(this.panel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "Receptions";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Receptions";
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();

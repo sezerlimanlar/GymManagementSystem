@@ -29,18 +29,18 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Members));
 			this.label13 = new System.Windows.Forms.Label();
 			this.label11 = new System.Windows.Forms.Label();
-			this.button3 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
-			this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+			this.deleteBtn = new System.Windows.Forms.Button();
+			this.saveBtn = new System.Windows.Forms.Button();
+			this.editBtn = new System.Windows.Forms.Button();
+			this.memberStartDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
 			this.label9 = new System.Windows.Forms.Label();
-			this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+			this.memberList = new Guna.UI2.WinForms.Guna2DataGridView();
 			this.BillingMenu = new System.Windows.Forms.Label();
 			this.label15 = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
@@ -49,22 +49,22 @@
 			this.pictureBox6 = new System.Windows.Forms.PictureBox();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.label5 = new System.Windows.Forms.Label();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.memberGenderCb = new System.Windows.Forms.ComboBox();
+			this.memberNameTxt = new System.Windows.Forms.TextBox();
 			this.panel4 = new System.Windows.Forms.Panel();
 			this.CoachMenu = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-			this.panel2 = new System.Windows.Forms.Panel();
+			this.member = new System.Windows.Forms.Panel();
 			this.pictureBox7 = new System.Windows.Forms.PictureBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.memberPhoneTxt = new System.Windows.Forms.TextBox();
 			this.label8 = new System.Windows.Forms.Label();
-			this.comboBox5 = new System.Windows.Forms.ComboBox();
-			this.comboBox4 = new System.Windows.Forms.ComboBox();
-			this.comboBox3 = new System.Windows.Forms.ComboBox();
+			this.memberStatusCb = new System.Windows.Forms.ComboBox();
+			this.memberDurationCb = new System.Windows.Forms.ComboBox();
+			this.membersCoachCb = new System.Windows.Forms.ComboBox();
 			this.label17 = new System.Windows.Forms.Label();
-			this.comboBox2 = new System.Windows.Forms.ComboBox();
-			this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+			this.membersPacketCb = new System.Windows.Forms.ComboBox();
+			this.memberDboTxt = new Guna.UI2.WinForms.Guna2DateTimePicker();
 			this.label16 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
@@ -79,11 +79,11 @@
 			this.panel5 = new System.Windows.Forms.Panel();
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.panel1 = new System.Windows.Forms.Panel();
-			((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.memberList)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.panel4.SuspendLayout();
-			this.panel2.SuspendLayout();
+			this.member.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
 			this.panel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -118,121 +118,125 @@
 			this.label11.TabIndex = 4;
 			this.label11.Text = "Üye";
 			// 
-			// button3
+			// deleteBtn
 			// 
-			this.button3.BackColor = System.Drawing.SystemColors.Highlight;
-			this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.button3.Font = new System.Drawing.Font("Poor Richard", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.button3.Location = new System.Drawing.Point(757, 258);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(81, 28);
-			this.button3.TabIndex = 21;
-			this.button3.Text = "Sil";
-			this.button3.UseVisualStyleBackColor = false;
+			this.deleteBtn.BackColor = System.Drawing.SystemColors.Highlight;
+			this.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.deleteBtn.Font = new System.Drawing.Font("Poor Richard", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.deleteBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.deleteBtn.Location = new System.Drawing.Point(736, 265);
+			this.deleteBtn.Name = "deleteBtn";
+			this.deleteBtn.Size = new System.Drawing.Size(81, 28);
+			this.deleteBtn.TabIndex = 21;
+			this.deleteBtn.Text = "Sil";
+			this.deleteBtn.UseVisualStyleBackColor = false;
+			this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
 			// 
-			// button2
+			// saveBtn
 			// 
-			this.button2.BackColor = System.Drawing.SystemColors.Highlight;
-			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.button2.Font = new System.Drawing.Font("Poor Richard", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.button2.Location = new System.Drawing.Point(648, 258);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(78, 28);
-			this.button2.TabIndex = 20;
-			this.button2.Text = "Kaydet";
-			this.button2.UseVisualStyleBackColor = false;
+			this.saveBtn.BackColor = System.Drawing.SystemColors.Highlight;
+			this.saveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.saveBtn.Font = new System.Drawing.Font("Poor Richard", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.saveBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.saveBtn.Location = new System.Drawing.Point(627, 265);
+			this.saveBtn.Name = "saveBtn";
+			this.saveBtn.Size = new System.Drawing.Size(78, 28);
+			this.saveBtn.TabIndex = 20;
+			this.saveBtn.Text = "Kaydet";
+			this.saveBtn.UseVisualStyleBackColor = false;
+			this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
 			// 
-			// button1
+			// editBtn
 			// 
-			this.button1.BackColor = System.Drawing.SystemColors.Highlight;
-			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.button1.Font = new System.Drawing.Font("Poor Richard", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.button1.Location = new System.Drawing.Point(864, 258);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(84, 28);
-			this.button1.TabIndex = 19;
-			this.button1.Text = "Düzenle";
-			this.button1.UseVisualStyleBackColor = false;
+			this.editBtn.BackColor = System.Drawing.SystemColors.Highlight;
+			this.editBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.editBtn.Font = new System.Drawing.Font("Poor Richard", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.editBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.editBtn.Location = new System.Drawing.Point(843, 265);
+			this.editBtn.Name = "editBtn";
+			this.editBtn.Size = new System.Drawing.Size(84, 28);
+			this.editBtn.TabIndex = 19;
+			this.editBtn.Text = "Düzenle";
+			this.editBtn.UseVisualStyleBackColor = false;
+			this.editBtn.Click += new System.EventHandler(this.editBtn_Click);
 			// 
-			// guna2DateTimePicker1
+			// memberStartDate
 			// 
-			this.guna2DateTimePicker1.BackColor = System.Drawing.SystemColors.Highlight;
-			this.guna2DateTimePicker1.Checked = true;
-			this.guna2DateTimePicker1.FillColor = System.Drawing.SystemColors.MenuHighlight;
-			this.guna2DateTimePicker1.Font = new System.Drawing.Font("Poor Richard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.guna2DateTimePicker1.ForeColor = System.Drawing.SystemColors.InfoText;
-			this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-			this.guna2DateTimePicker1.Location = new System.Drawing.Point(594, 141);
-			this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-			this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-			this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-			this.guna2DateTimePicker1.Size = new System.Drawing.Size(157, 20);
-			this.guna2DateTimePicker1.TabIndex = 18;
-			this.guna2DateTimePicker1.Value = new System.DateTime(2024, 1, 2, 20, 55, 18, 553);
+			this.memberStartDate.BackColor = System.Drawing.SystemColors.Highlight;
+			this.memberStartDate.Checked = true;
+			this.memberStartDate.FillColor = System.Drawing.SystemColors.MenuHighlight;
+			this.memberStartDate.Font = new System.Drawing.Font("Poor Richard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.memberStartDate.ForeColor = System.Drawing.SystemColors.InfoText;
+			this.memberStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+			this.memberStartDate.Location = new System.Drawing.Point(594, 141);
+			this.memberStartDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+			this.memberStartDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+			this.memberStartDate.Name = "memberStartDate";
+			this.memberStartDate.Size = new System.Drawing.Size(157, 20);
+			this.memberStartDate.TabIndex = 18;
+			this.memberStartDate.Value = new System.DateTime(2024, 1, 2, 20, 55, 18, 553);
 			// 
 			// label9
 			// 
 			this.label9.AutoSize = true;
 			this.label9.Font = new System.Drawing.Font("Poor Richard", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label9.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-			this.label9.Location = new System.Drawing.Point(523, 300);
+			this.label9.Location = new System.Drawing.Point(525, 317);
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size(125, 31);
 			this.label9.TabIndex = 17;
 			this.label9.Text = "Üye Listesi";
 			// 
-			// guna2DataGridView1
+			// memberList
 			// 
-			dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-			this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-			dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
-			this.guna2DataGridView1.ColumnHeadersHeight = 4;
-			this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle12;
-			this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			this.guna2DataGridView1.Location = new System.Drawing.Point(219, 334);
-			this.guna2DataGridView1.Name = "guna2DataGridView1";
-			this.guna2DataGridView1.RowHeadersVisible = false;
-			this.guna2DataGridView1.Size = new System.Drawing.Size(768, 221);
-			this.guna2DataGridView1.TabIndex = 16;
-			this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-			this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-			this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-			this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-			this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-			this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-			this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-			this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-			this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-			this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-			this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-			this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-			this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-			this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+			this.memberList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+			dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.memberList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+			this.memberList.ColumnHeadersHeight = 28;
+			this.memberList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+			dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.memberList.DefaultCellStyle = dataGridViewCellStyle15;
+			this.memberList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			this.memberList.Location = new System.Drawing.Point(219, 352);
+			this.memberList.Name = "memberList";
+			this.memberList.RowHeadersVisible = false;
+			this.memberList.Size = new System.Drawing.Size(768, 203);
+			this.memberList.TabIndex = 16;
+			this.memberList.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+			this.memberList.ThemeStyle.AlternatingRowsStyle.Font = null;
+			this.memberList.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+			this.memberList.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+			this.memberList.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+			this.memberList.ThemeStyle.BackColor = System.Drawing.Color.White;
+			this.memberList.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			this.memberList.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			this.memberList.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+			this.memberList.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.memberList.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+			this.memberList.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+			this.memberList.ThemeStyle.HeaderStyle.Height = 28;
+			this.memberList.ThemeStyle.ReadOnly = false;
+			this.memberList.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+			this.memberList.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+			this.memberList.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.memberList.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			this.memberList.ThemeStyle.RowsStyle.Height = 22;
+			this.memberList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			this.memberList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			this.memberList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.memberList_CellContentClick);
 			// 
 			// BillingMenu
 			// 
@@ -258,6 +262,7 @@
 			this.label15.Size = new System.Drawing.Size(57, 24);
 			this.label15.TabIndex = 8;
 			this.label15.Text = "Çıkış";
+			this.label15.Click += new System.EventHandler(this.label15_Click);
 			// 
 			// label7
 			// 
@@ -320,23 +325,23 @@
 			this.label5.TabIndex = 9;
 			this.label5.Text = "Antrenör";
 			// 
-			// comboBox1
+			// memberGenderCb
 			// 
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Items.AddRange(new object[] {
+			this.memberGenderCb.FormattingEnabled = true;
+			this.memberGenderCb.Items.AddRange(new object[] {
             "Erkek",
             "Kadın"});
-			this.comboBox1.Location = new System.Drawing.Point(400, 140);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(157, 21);
-			this.comboBox1.TabIndex = 8;
+			this.memberGenderCb.Location = new System.Drawing.Point(400, 140);
+			this.memberGenderCb.Name = "memberGenderCb";
+			this.memberGenderCb.Size = new System.Drawing.Size(157, 21);
+			this.memberGenderCb.TabIndex = 8;
 			// 
-			// textBox1
+			// memberNameTxt
 			// 
-			this.textBox1.Location = new System.Drawing.Point(218, 141);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(157, 20);
-			this.textBox1.TabIndex = 5;
+			this.memberNameTxt.Location = new System.Drawing.Point(218, 141);
+			this.memberNameTxt.Name = "memberNameTxt";
+			this.memberNameTxt.Size = new System.Drawing.Size(157, 20);
+			this.memberNameTxt.TabIndex = 5;
 			// 
 			// panel4
 			// 
@@ -375,40 +380,40 @@
 			// guna2Elipse2
 			// 
 			this.guna2Elipse2.BorderRadius = 20;
-			this.guna2Elipse2.TargetControl = this.panel2;
+			this.guna2Elipse2.TargetControl = this.member;
 			// 
-			// panel2
+			// member
 			// 
-			this.panel2.Controls.Add(this.pictureBox7);
-			this.panel2.Controls.Add(this.textBox2);
-			this.panel2.Controls.Add(this.label8);
-			this.panel2.Controls.Add(this.comboBox5);
-			this.panel2.Controls.Add(this.comboBox4);
-			this.panel2.Controls.Add(this.comboBox3);
-			this.panel2.Controls.Add(this.label17);
-			this.panel2.Controls.Add(this.comboBox2);
-			this.panel2.Controls.Add(this.guna2DateTimePicker2);
-			this.panel2.Controls.Add(this.label16);
-			this.panel2.Controls.Add(this.button3);
-			this.panel2.Controls.Add(this.button2);
-			this.panel2.Controls.Add(this.button1);
-			this.panel2.Controls.Add(this.guna2DateTimePicker1);
-			this.panel2.Controls.Add(this.label9);
-			this.panel2.Controls.Add(this.guna2DataGridView1);
-			this.panel2.Controls.Add(this.label7);
-			this.panel2.Controls.Add(this.label6);
-			this.panel2.Controls.Add(this.label5);
-			this.panel2.Controls.Add(this.comboBox1);
-			this.panel2.Controls.Add(this.textBox1);
-			this.panel2.Controls.Add(this.label4);
-			this.panel2.Controls.Add(this.label3);
-			this.panel2.Controls.Add(this.label2);
-			this.panel2.Controls.Add(this.label1);
-			this.panel2.Controls.Add(this.panel3);
-			this.panel2.Location = new System.Drawing.Point(30, 12);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(1005, 573);
-			this.panel2.TabIndex = 3;
+			this.member.Controls.Add(this.pictureBox7);
+			this.member.Controls.Add(this.memberPhoneTxt);
+			this.member.Controls.Add(this.label8);
+			this.member.Controls.Add(this.memberStatusCb);
+			this.member.Controls.Add(this.memberDurationCb);
+			this.member.Controls.Add(this.membersCoachCb);
+			this.member.Controls.Add(this.label17);
+			this.member.Controls.Add(this.membersPacketCb);
+			this.member.Controls.Add(this.memberDboTxt);
+			this.member.Controls.Add(this.label16);
+			this.member.Controls.Add(this.deleteBtn);
+			this.member.Controls.Add(this.saveBtn);
+			this.member.Controls.Add(this.editBtn);
+			this.member.Controls.Add(this.memberStartDate);
+			this.member.Controls.Add(this.label9);
+			this.member.Controls.Add(this.memberList);
+			this.member.Controls.Add(this.label7);
+			this.member.Controls.Add(this.label6);
+			this.member.Controls.Add(this.label5);
+			this.member.Controls.Add(this.memberGenderCb);
+			this.member.Controls.Add(this.memberNameTxt);
+			this.member.Controls.Add(this.label4);
+			this.member.Controls.Add(this.label3);
+			this.member.Controls.Add(this.label2);
+			this.member.Controls.Add(this.label1);
+			this.member.Controls.Add(this.panel3);
+			this.member.Location = new System.Drawing.Point(30, 12);
+			this.member.Name = "member";
+			this.member.Size = new System.Drawing.Size(1005, 573);
+			this.member.TabIndex = 3;
 			// 
 			// pictureBox7
 			// 
@@ -419,12 +424,12 @@
 			this.pictureBox7.TabIndex = 31;
 			this.pictureBox7.TabStop = false;
 			// 
-			// textBox2
+			// memberPhoneTxt
 			// 
-			this.textBox2.Location = new System.Drawing.Point(219, 288);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(157, 20);
-			this.textBox2.TabIndex = 30;
+			this.memberPhoneTxt.Location = new System.Drawing.Point(219, 288);
+			this.memberPhoneTxt.Name = "memberPhoneTxt";
+			this.memberPhoneTxt.Size = new System.Drawing.Size(157, 20);
+			this.memberPhoneTxt.TabIndex = 30;
 			// 
 			// label8
 			// 
@@ -436,40 +441,38 @@
 			this.label8.TabIndex = 29;
 			this.label8.Text = "Telefon";
 			// 
-			// comboBox5
+			// memberStatusCb
 			// 
-			this.comboBox5.FormattingEnabled = true;
-			this.comboBox5.Items.AddRange(new object[] {
+			this.memberStatusCb.FormattingEnabled = true;
+			this.memberStatusCb.Items.AddRange(new object[] {
             "Aktif",
             "Pasif",
             "Dondurulmuş",
             "İptal"});
-			this.comboBox5.Location = new System.Drawing.Point(400, 214);
-			this.comboBox5.Name = "comboBox5";
-			this.comboBox5.Size = new System.Drawing.Size(157, 21);
-			this.comboBox5.TabIndex = 28;
+			this.memberStatusCb.Location = new System.Drawing.Point(400, 214);
+			this.memberStatusCb.Name = "memberStatusCb";
+			this.memberStatusCb.Size = new System.Drawing.Size(157, 21);
+			this.memberStatusCb.TabIndex = 28;
 			// 
-			// comboBox4
+			// memberDurationCb
 			// 
-			this.comboBox4.FormattingEnabled = true;
-			this.comboBox4.Items.AddRange(new object[] {
-            "Erkek",
-            "Kadın"});
-			this.comboBox4.Location = new System.Drawing.Point(219, 214);
-			this.comboBox4.Name = "comboBox4";
-			this.comboBox4.Size = new System.Drawing.Size(157, 21);
-			this.comboBox4.TabIndex = 27;
+			this.memberDurationCb.FormattingEnabled = true;
+			this.memberDurationCb.Items.AddRange(new object[] {
+            "10:00 - 16:00",
+            "16:00 - 23:00",
+            "Limitsiz"});
+			this.memberDurationCb.Location = new System.Drawing.Point(219, 214);
+			this.memberDurationCb.Name = "memberDurationCb";
+			this.memberDurationCb.Size = new System.Drawing.Size(157, 21);
+			this.memberDurationCb.TabIndex = 27;
 			// 
-			// comboBox3
+			// membersCoachCb
 			// 
-			this.comboBox3.FormattingEnabled = true;
-			this.comboBox3.Items.AddRange(new object[] {
-            "Erkek",
-            "Kadın"});
-			this.comboBox3.Location = new System.Drawing.Point(594, 211);
-			this.comboBox3.Name = "comboBox3";
-			this.comboBox3.Size = new System.Drawing.Size(157, 21);
-			this.comboBox3.TabIndex = 26;
+			this.membersCoachCb.FormattingEnabled = true;
+			this.membersCoachCb.Location = new System.Drawing.Point(594, 211);
+			this.membersCoachCb.Name = "membersCoachCb";
+			this.membersCoachCb.Size = new System.Drawing.Size(157, 21);
+			this.membersCoachCb.TabIndex = 26;
 			// 
 			// label17
 			// 
@@ -481,32 +484,29 @@
 			this.label17.TabIndex = 25;
 			this.label17.Text = "Üyelik Paketi";
 			// 
-			// comboBox2
+			// membersPacketCb
 			// 
-			this.comboBox2.FormattingEnabled = true;
-			this.comboBox2.Items.AddRange(new object[] {
-            "Erkek",
-            "Kadın"});
-			this.comboBox2.Location = new System.Drawing.Point(791, 212);
-			this.comboBox2.Name = "comboBox2";
-			this.comboBox2.Size = new System.Drawing.Size(157, 21);
-			this.comboBox2.TabIndex = 24;
+			this.membersPacketCb.FormattingEnabled = true;
+			this.membersPacketCb.Location = new System.Drawing.Point(791, 212);
+			this.membersPacketCb.Name = "membersPacketCb";
+			this.membersPacketCb.Size = new System.Drawing.Size(157, 21);
+			this.membersPacketCb.TabIndex = 24;
 			// 
-			// guna2DateTimePicker2
+			// memberDboTxt
 			// 
-			this.guna2DateTimePicker2.BackColor = System.Drawing.SystemColors.Highlight;
-			this.guna2DateTimePicker2.Checked = true;
-			this.guna2DateTimePicker2.FillColor = System.Drawing.SystemColors.MenuHighlight;
-			this.guna2DateTimePicker2.Font = new System.Drawing.Font("Poor Richard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.guna2DateTimePicker2.ForeColor = System.Drawing.SystemColors.InfoText;
-			this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-			this.guna2DateTimePicker2.Location = new System.Drawing.Point(791, 141);
-			this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-			this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-			this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-			this.guna2DateTimePicker2.Size = new System.Drawing.Size(157, 20);
-			this.guna2DateTimePicker2.TabIndex = 23;
-			this.guna2DateTimePicker2.Value = new System.DateTime(2024, 1, 2, 20, 55, 18, 553);
+			this.memberDboTxt.BackColor = System.Drawing.SystemColors.Highlight;
+			this.memberDboTxt.Checked = true;
+			this.memberDboTxt.FillColor = System.Drawing.SystemColors.MenuHighlight;
+			this.memberDboTxt.Font = new System.Drawing.Font("Poor Richard", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.memberDboTxt.ForeColor = System.Drawing.SystemColors.InfoText;
+			this.memberDboTxt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+			this.memberDboTxt.Location = new System.Drawing.Point(791, 141);
+			this.memberDboTxt.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+			this.memberDboTxt.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+			this.memberDboTxt.Name = "memberDboTxt";
+			this.memberDboTxt.Size = new System.Drawing.Size(157, 20);
+			this.memberDboTxt.TabIndex = 23;
+			this.memberDboTxt.Value = new System.DateTime(2024, 1, 2, 20, 55, 18, 553);
 			// 
 			// label16
 			// 
@@ -514,9 +514,9 @@
 			this.label16.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label16.Location = new System.Drawing.Point(787, 106);
 			this.label16.Name = "label16";
-			this.label16.Size = new System.Drawing.Size(117, 24);
+			this.label16.Size = new System.Drawing.Size(130, 24);
 			this.label16.TabIndex = 22;
-			this.label16.Text = "Üyelik Sonu";
+			this.label16.Text = "Dogum Tarihi";
 			// 
 			// label3
 			// 
@@ -658,18 +658,19 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1041, 597);
-			this.Controls.Add(this.panel2);
+			this.Controls.Add(this.member);
 			this.Controls.Add(this.panel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "Members";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Members";
-			((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.memberList)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.panel4.ResumeLayout(false);
 			this.panel4.PerformLayout();
-			this.panel2.ResumeLayout(false);
-			this.panel2.PerformLayout();
+			this.member.ResumeLayout(false);
+			this.member.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
 			this.panel3.ResumeLayout(false);
 			this.panel3.PerformLayout();
@@ -687,12 +688,12 @@
 
 		private System.Windows.Forms.Label label13;
 		private System.Windows.Forms.Label label11;
-		private System.Windows.Forms.Button button3;
-		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Button button1;
-		private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+		private System.Windows.Forms.Button deleteBtn;
+		private System.Windows.Forms.Button saveBtn;
+		private System.Windows.Forms.Button editBtn;
+		private Guna.UI2.WinForms.Guna2DateTimePicker memberStartDate;
 		private System.Windows.Forms.Label label9;
-		private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+		private Guna.UI2.WinForms.Guna2DataGridView memberList;
 		private System.Windows.Forms.Label BillingMenu;
 		private System.Windows.Forms.Label label15;
 		private System.Windows.Forms.Label label7;
@@ -701,13 +702,13 @@
 		private System.Windows.Forms.PictureBox pictureBox6;
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.ComboBox comboBox1;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.ComboBox memberGenderCb;
+		private System.Windows.Forms.TextBox memberNameTxt;
 		private System.Windows.Forms.Panel panel4;
 		private System.Windows.Forms.Label CoachMenu;
 		private System.Windows.Forms.Label label4;
 		private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
-		private System.Windows.Forms.Panel panel2;
+		private System.Windows.Forms.Panel member;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label1;
@@ -719,15 +720,15 @@
 		private System.Windows.Forms.Panel panel5;
 		private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
 		private System.Windows.Forms.Panel panel1;
-		private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
+		private Guna.UI2.WinForms.Guna2DateTimePicker memberDboTxt;
 		private System.Windows.Forms.Label label16;
 		private System.Windows.Forms.Label label17;
-		private System.Windows.Forms.ComboBox comboBox2;
-		private System.Windows.Forms.TextBox textBox2;
+		private System.Windows.Forms.ComboBox membersPacketCb;
+		private System.Windows.Forms.TextBox memberPhoneTxt;
 		private System.Windows.Forms.Label label8;
-		private System.Windows.Forms.ComboBox comboBox5;
-		private System.Windows.Forms.ComboBox comboBox4;
-		private System.Windows.Forms.ComboBox comboBox3;
+		private System.Windows.Forms.ComboBox memberStatusCb;
+		private System.Windows.Forms.ComboBox memberDurationCb;
+		private System.Windows.Forms.ComboBox membersCoachCb;
 		private System.Windows.Forms.PictureBox pictureBox7;
 		private System.Windows.Forms.PictureBox pictureBox8;
 		private System.Windows.Forms.Label ReceptionMenu;

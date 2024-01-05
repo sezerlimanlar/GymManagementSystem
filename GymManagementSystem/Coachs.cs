@@ -105,12 +105,6 @@ namespace GymManagementSystem
 				}
 				else
 				{
-					string coachName = coachNameTxt.Text;
-					string coachGender = coachGenderTxt.SelectedItem.ToString();
-					string coachPhone = coachPhoneTxt.Text;
-					int coachExperience = Convert.ToInt32(coachExperienceTxt.Text);
-					string coachAddress = coachAddressTxt.Text;
-					string coachPassword = coachPasswordTxt.Text;
 					string Query = "delete from CoachTable where CoachId = '{0}'";
 					Query = string.Format(Query, key);
 					Con.setData(Query);
@@ -180,6 +174,13 @@ namespace GymManagementSystem
 		{
 			Billing billing = new Billing();
 			billing.Show();
+			this.Hide();
+		}
+
+		private void label15_Click(object sender, EventArgs e)
+		{
+			Login login = new Login();
+			login.Show();
 			this.Hide();
 		}
 	}

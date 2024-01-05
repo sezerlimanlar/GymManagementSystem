@@ -30,24 +30,22 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Billing));
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-			this.textBox3 = new System.Windows.Forms.TextBox();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.panel2 = new System.Windows.Forms.Panel();
-			this.pictureBox8 = new System.Windows.Forms.PictureBox();
 			this.label4 = new System.Windows.Forms.Label();
-			this.button3 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
-			this.label9 = new System.Windows.Forms.Label();
-			this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-			this.label5 = new System.Windows.Forms.Label();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
+			this.billingDateTxt = new Guna.UI2.WinForms.Guna2DateTimePicker();
+			this.billingStartDateTxt = new Guna.UI2.WinForms.Guna2DateTimePicker();
 			this.label2 = new System.Windows.Forms.Label();
+			this.billingPriceTxt = new System.Windows.Forms.TextBox();
+			this.pictureBox8 = new System.Windows.Forms.PictureBox();
+			this.cancelBtn = new System.Windows.Forms.Button();
+			this.confirmBtn = new System.Windows.Forms.Button();
+			this.label9 = new System.Windows.Forms.Label();
+			this.BillingList = new Guna.UI2.WinForms.Guna2DataGridView();
+			this.label5 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -69,9 +67,10 @@
 			this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.billingMemberTxt = new System.Windows.Forms.ComboBox();
 			this.panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.BillingList)).BeginInit();
 			this.panel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -84,36 +83,92 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
 			this.SuspendLayout();
 			// 
-			// textBox3
-			// 
-			this.textBox3.Location = new System.Drawing.Point(588, 141);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(157, 20);
-			this.textBox3.TabIndex = 23;
-			// 
 			// panel2
 			// 
 			this.panel2.BackColor = System.Drawing.SystemColors.Control;
-			this.panel2.Controls.Add(this.pictureBox8);
+			this.panel2.Controls.Add(this.billingMemberTxt);
 			this.panel2.Controls.Add(this.label4);
-			this.panel2.Controls.Add(this.textBox3);
-			this.panel2.Controls.Add(this.button3);
-			this.panel2.Controls.Add(this.button2);
-			this.panel2.Controls.Add(this.button1);
-			this.panel2.Controls.Add(this.label9);
-			this.panel2.Controls.Add(this.guna2DataGridView1);
-			this.panel2.Controls.Add(this.label5);
-			this.panel2.Controls.Add(this.comboBox1);
-			this.panel2.Controls.Add(this.textBox2);
-			this.panel2.Controls.Add(this.textBox1);
 			this.panel2.Controls.Add(this.label3);
+			this.panel2.Controls.Add(this.billingDateTxt);
+			this.panel2.Controls.Add(this.billingStartDateTxt);
 			this.panel2.Controls.Add(this.label2);
+			this.panel2.Controls.Add(this.billingPriceTxt);
+			this.panel2.Controls.Add(this.pictureBox8);
+			this.panel2.Controls.Add(this.cancelBtn);
+			this.panel2.Controls.Add(this.confirmBtn);
+			this.panel2.Controls.Add(this.label9);
+			this.panel2.Controls.Add(this.BillingList);
+			this.panel2.Controls.Add(this.label5);
 			this.panel2.Controls.Add(this.label1);
 			this.panel2.Controls.Add(this.panel3);
 			this.panel2.Location = new System.Drawing.Point(33, 12);
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(1005, 573);
 			this.panel2.TabIndex = 5;
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.Location = new System.Drawing.Point(240, 304);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(125, 24);
+			this.label4.TabIndex = 31;
+			this.label4.Text = "Fatura Tarihi";
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.Location = new System.Drawing.Point(240, 219);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(100, 24);
+			this.label3.TabIndex = 30;
+			this.label3.Text = "Başlangıç";
+			// 
+			// billingDateTxt
+			// 
+			this.billingDateTxt.Checked = true;
+			this.billingDateTxt.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.billingDateTxt.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+			this.billingDateTxt.Location = new System.Drawing.Point(244, 332);
+			this.billingDateTxt.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+			this.billingDateTxt.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+			this.billingDateTxt.Name = "billingDateTxt";
+			this.billingDateTxt.Size = new System.Drawing.Size(200, 24);
+			this.billingDateTxt.TabIndex = 29;
+			this.billingDateTxt.Value = new System.DateTime(2024, 1, 5, 20, 0, 58, 76);
+			// 
+			// billingStartDateTxt
+			// 
+			this.billingStartDateTxt.Checked = true;
+			this.billingStartDateTxt.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.billingStartDateTxt.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+			this.billingStartDateTxt.Location = new System.Drawing.Point(244, 246);
+			this.billingStartDateTxt.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+			this.billingStartDateTxt.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+			this.billingStartDateTxt.Name = "billingStartDateTxt";
+			this.billingStartDateTxt.Size = new System.Drawing.Size(200, 25);
+			this.billingStartDateTxt.TabIndex = 28;
+			this.billingStartDateTxt.Value = new System.DateTime(2024, 1, 5, 20, 0, 58, 76);
+			this.billingStartDateTxt.ValueChanged += new System.EventHandler(this.guna2DateTimePicker1_ValueChanged);
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.Location = new System.Drawing.Point(240, 383);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(55, 24);
+			this.label2.TabIndex = 27;
+			this.label2.Text = "Fiyat";
+			// 
+			// billingPriceTxt
+			// 
+			this.billingPriceTxt.Location = new System.Drawing.Point(244, 418);
+			this.billingPriceTxt.Name = "billingPriceTxt";
+			this.billingPriceTxt.Size = new System.Drawing.Size(157, 20);
+			this.billingPriceTxt.TabIndex = 26;
 			// 
 			// pictureBox8
 			// 
@@ -124,170 +179,105 @@
 			this.pictureBox8.TabIndex = 25;
 			this.pictureBox8.TabStop = false;
 			// 
-			// label4
+			// cancelBtn
 			// 
-			this.label4.AutoSize = true;
-			this.label4.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(584, 106);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(112, 24);
-			this.label4.TabIndex = 24;
-			this.label4.Text = "Hedeflenen";
+			this.cancelBtn.BackColor = System.Drawing.Color.Crimson;
+			this.cancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.cancelBtn.Font = new System.Drawing.Font("Poor Richard", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cancelBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.cancelBtn.Location = new System.Drawing.Point(358, 473);
+			this.cancelBtn.Name = "cancelBtn";
+			this.cancelBtn.Size = new System.Drawing.Size(81, 28);
+			this.cancelBtn.TabIndex = 21;
+			this.cancelBtn.Text = "İptal";
+			this.cancelBtn.UseVisualStyleBackColor = false;
+			this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
 			// 
-			// button3
+			// confirmBtn
 			// 
-			this.button3.BackColor = System.Drawing.SystemColors.Highlight;
-			this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.button3.Font = new System.Drawing.Font("Poor Richard", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.button3.Location = new System.Drawing.Point(547, 209);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(81, 28);
-			this.button3.TabIndex = 21;
-			this.button3.Text = "Sil";
-			this.button3.UseVisualStyleBackColor = false;
-			// 
-			// button2
-			// 
-			this.button2.BackColor = System.Drawing.SystemColors.Highlight;
-			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.button2.Font = new System.Drawing.Font("Poor Richard", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.button2.Location = new System.Drawing.Point(416, 209);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(78, 28);
-			this.button2.TabIndex = 20;
-			this.button2.Text = "Kaydet";
-			this.button2.UseVisualStyleBackColor = false;
-			// 
-			// button1
-			// 
-			this.button1.BackColor = System.Drawing.SystemColors.Highlight;
-			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.button1.Font = new System.Drawing.Font("Poor Richard", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.button1.Location = new System.Drawing.Point(679, 209);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(84, 28);
-			this.button1.TabIndex = 19;
-			this.button1.Text = "Düzenle";
-			this.button1.UseVisualStyleBackColor = false;
+			this.confirmBtn.BackColor = System.Drawing.Color.OliveDrab;
+			this.confirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.confirmBtn.Font = new System.Drawing.Font("Poor Richard", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.confirmBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.confirmBtn.Location = new System.Drawing.Point(244, 473);
+			this.confirmBtn.Name = "confirmBtn";
+			this.confirmBtn.Size = new System.Drawing.Size(82, 28);
+			this.confirmBtn.TabIndex = 20;
+			this.confirmBtn.Text = "Onayla";
+			this.confirmBtn.UseVisualStyleBackColor = false;
+			this.confirmBtn.Click += new System.EventHandler(this.confirmBtn_Click);
 			// 
 			// label9
 			// 
 			this.label9.AutoSize = true;
 			this.label9.Font = new System.Drawing.Font("Poor Richard", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label9.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-			this.label9.Location = new System.Drawing.Point(512, 290);
+			this.label9.Location = new System.Drawing.Point(658, 80);
 			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(140, 31);
+			this.label9.Size = new System.Drawing.Size(158, 31);
 			this.label9.TabIndex = 17;
-			this.label9.Text = "Paket Listesi";
+			this.label9.Text = "Ödeme Listesi";
 			// 
-			// guna2DataGridView1
+			// BillingList
 			// 
-			dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-			this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-			dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
-			this.guna2DataGridView1.ColumnHeadersHeight = 4;
-			this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle12;
-			this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			this.guna2DataGridView1.Location = new System.Drawing.Point(219, 334);
-			this.guna2DataGridView1.Name = "guna2DataGridView1";
-			this.guna2DataGridView1.RowHeadersVisible = false;
-			this.guna2DataGridView1.Size = new System.Drawing.Size(768, 221);
-			this.guna2DataGridView1.TabIndex = 16;
-			this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-			this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-			this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-			this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-			this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-			this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-			this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-			this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-			this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-			this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-			this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-			this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-			this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-			this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+			this.BillingList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+			dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.BillingList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+			this.BillingList.ColumnHeadersHeight = 4;
+			this.BillingList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+			dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.BillingList.DefaultCellStyle = dataGridViewCellStyle9;
+			this.BillingList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			this.BillingList.Location = new System.Drawing.Point(477, 128);
+			this.BillingList.Name = "BillingList";
+			this.BillingList.RowHeadersVisible = false;
+			this.BillingList.Size = new System.Drawing.Size(510, 399);
+			this.BillingList.TabIndex = 16;
+			this.BillingList.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+			this.BillingList.ThemeStyle.AlternatingRowsStyle.Font = null;
+			this.BillingList.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+			this.BillingList.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+			this.BillingList.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+			this.BillingList.ThemeStyle.BackColor = System.Drawing.Color.White;
+			this.BillingList.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			this.BillingList.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			this.BillingList.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+			this.BillingList.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BillingList.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+			this.BillingList.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+			this.BillingList.ThemeStyle.HeaderStyle.Height = 4;
+			this.BillingList.ThemeStyle.ReadOnly = false;
+			this.BillingList.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+			this.BillingList.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+			this.BillingList.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BillingList.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			this.BillingList.ThemeStyle.RowsStyle.Height = 22;
+			this.BillingList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			this.BillingList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			this.BillingList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
 			// 
 			// label5
 			// 
 			this.label5.AutoSize = true;
 			this.label5.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(778, 106);
+			this.label5.Location = new System.Drawing.Point(240, 153);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(60, 24);
+			this.label5.Size = new System.Drawing.Size(46, 24);
 			this.label5.TabIndex = 9;
-			this.label5.Text = "Ücret";
-			// 
-			// comboBox1
-			// 
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Items.AddRange(new object[] {
-            "Erkek",
-            "Kadın"});
-			this.comboBox1.Location = new System.Drawing.Point(400, 140);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(157, 21);
-			this.comboBox1.TabIndex = 8;
-			// 
-			// textBox2
-			// 
-			this.textBox2.Location = new System.Drawing.Point(782, 141);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(157, 20);
-			this.textBox2.TabIndex = 6;
-			// 
-			// textBox1
-			// 
-			this.textBox1.Location = new System.Drawing.Point(218, 141);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(157, 20);
-			this.textBox1.TabIndex = 5;
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(396, 106);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(117, 24);
-			this.label3.TabIndex = 3;
-			this.label3.Text = "Paket Süresi";
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(215, 106);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(99, 24);
-			this.label2.TabIndex = 2;
-			this.label2.Text = "Paket İsmi";
+			this.label5.Text = "Üye";
 			// 
 			// label1
 			// 
@@ -428,6 +418,7 @@
 			this.label15.Size = new System.Drawing.Size(57, 24);
 			this.label15.TabIndex = 8;
 			this.label15.Text = "Çıkış";
+			this.label15.Click += new System.EventHandler(this.label15_Click);
 			// 
 			// label14
 			// 
@@ -511,6 +502,14 @@
 			this.panel1.Size = new System.Drawing.Size(154, 597);
 			this.panel1.TabIndex = 4;
 			// 
+			// billingMemberTxt
+			// 
+			this.billingMemberTxt.FormattingEnabled = true;
+			this.billingMemberTxt.Location = new System.Drawing.Point(244, 176);
+			this.billingMemberTxt.Name = "billingMemberTxt";
+			this.billingMemberTxt.Size = new System.Drawing.Size(157, 21);
+			this.billingMemberTxt.TabIndex = 32;
+			// 
 			// Billing
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -520,11 +519,12 @@
 			this.Controls.Add(this.panel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "Billing";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Billing";
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.BillingList)).EndInit();
 			this.panel3.ResumeLayout(false);
 			this.panel3.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -542,21 +542,12 @@
 		}
 
 		#endregion
-
-		private System.Windows.Forms.TextBox textBox3;
 		private System.Windows.Forms.Panel panel2;
-		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.Button button3;
-		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button cancelBtn;
+		private System.Windows.Forms.Button confirmBtn;
 		private System.Windows.Forms.Label label9;
-		private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+		private Guna.UI2.WinForms.Guna2DataGridView BillingList;
 		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.ComboBox comboBox1;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Panel panel3;
 		private System.Windows.Forms.PictureBox pictureBox5;
@@ -579,5 +570,12 @@
 		private System.Windows.Forms.PictureBox pictureBox8;
 		private System.Windows.Forms.PictureBox pictureBox7;
 		private System.Windows.Forms.Label label6;
+		private Guna.UI2.WinForms.Guna2DateTimePicker billingDateTxt;
+		private Guna.UI2.WinForms.Guna2DateTimePicker billingStartDateTxt;
+		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.TextBox billingPriceTxt;
+		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.ComboBox billingMemberTxt;
 	}
 }

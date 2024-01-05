@@ -100,12 +100,6 @@ namespace GymManagementSystem
 				}
 				else
 				{
-					string receptionName = ReceptionNameTxt.Text;
-					string receptionGender = ReceptionGenderTxt.SelectedItem.ToString();
-					string receptionPhone = ReceptionPhoneTxt.Text;
-					string receptionPassword = ReceptionPasswordTxt.Text;
-					string receptionDob = ReceptionDobTxt.Text;
-					string receptionAddress = ReceptionAddressTxt.Text;
 					string Query = "delete from ReceptionTable where ReceptionId = '{0}'";
 					Query = string.Format(Query, key);
 					Con.setData(Query);
@@ -173,6 +167,13 @@ namespace GymManagementSystem
 		{
 			Billing billing = new Billing();
 			billing.Show();
+			this.Hide();
+		}
+
+		private void label15_Click(object sender, EventArgs e)
+		{
+			Login login = new Login();
+			login.Show();
 			this.Hide();
 		}
 	}
